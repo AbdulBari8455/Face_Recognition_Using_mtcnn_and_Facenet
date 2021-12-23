@@ -34,4 +34,11 @@ Now Train an ML algorithm on these embeddings.
 
 Now your face recognition system is ready !!. Let us see how we can recognise faces, with what all we have done above. Now you have with you, the corpus of 128-dimensional embeddings with corresponding employee names. When ever an employee faces your detection camera, the image being captured will be ran through the pre-trained network to create the 128-dimensional embedding which will then be compared to the stored embeddings using euclidean(L2) distance. If the lowest distance between the captured embedding and the stored embeddings is less than a threshold value, the system can recognise that person as the employee corresponding to that lowest distant embedding.
 
+Align Dataset Accordingly For Training:
+Training Dataset
+|...Person1
+|...Person2
+|...Person3
+|...Person4
+
 That’s all…. You have built a simple, but efficient face recognition system. Have a nice day…!!
