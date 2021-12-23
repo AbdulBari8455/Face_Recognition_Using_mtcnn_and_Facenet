@@ -36,7 +36,8 @@ Now your face recognition system is ready !!. Let us see how we can recognise fa
 
 Align Dataset Accordingly For Training:
 
-Training Dataset\n
+Training Dataset
+
 |...Person1
 |...Person2
 |...Person3
