@@ -22,10 +22,15 @@ One-shot learning can be implemented using a Siamese network. As the name indica
 FaceNet is a one-shot model, that directly learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity. Once this space has been produced, tasks such as face recognition, verification and clustering can be easily implemented using standard techniques with FaceNet embeddings as feature vectors(from the original paper).To train, they used triplets of roughly aligned matching / non-matching face patches. A triplet is nothing but a collection one anchor image, one matching image to the anchor image and one non-matching image to the anchor image. So the triplet loss minimises the distance between an anchor and a positive, both of which have the same identity, and maximises the distance between the anchor and a negative of a different identity.
 ![image](https://user-images.githubusercontent.com/73050746/147217333-d2ab22ed-851a-4796-ac50-3e48cd420b8f.png)
 
-Collect the images of all employees.
+Collect the images of all Persons.
+
 Align the faces using MTCNN (Multi-task Cascaded Convolutional Neural Networks), dlib or Opencv. These methods identify, detect and align the faces by making eyes and bottom lip appear in the same location on each image.
+
 Use the pre-trained facenet model to represent (or embed) the faces of all employees on a 128-dimensional unit hyper sphere.
-Store the embeddings with respective employee names on disc.
+
+Store the embeddings with respective Persons names on disc.
+
+Now Train an ML algorithm on these embeddings.
 
 Now your face recognition system is ready !!. Let us see how we can recognise faces, with what all we have done above. Now you have with you, the corpus of 128-dimensional embeddings with corresponding employee names. When ever an employee faces your detection camera, the image being captured will be ran through the pre-trained network to create the 128-dimensional embedding which will then be compared to the stored embeddings using euclidean(L2) distance. If the lowest distance between the captured embedding and the stored embeddings is less than a threshold value, the system can recognise that person as the employee corresponding to that lowest distant embedding.
 
