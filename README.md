@@ -36,9 +36,13 @@ Now your face recognition system is ready !!. Let us see how we can recognise fa
 
 Align Dataset Accordingly For Training:
 Training Dataset
+
 |...Person1
+
 |...Person2
+
 |...Person3
+
 |...Person4
 
 That’s all…. You have built a simple, but efficient face recognition system. Have a nice day…!!
