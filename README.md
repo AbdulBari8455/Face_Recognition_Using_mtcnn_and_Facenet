@@ -39,8 +39,11 @@ Align Dataset Accordingly For Training:
 Training Dataset
 
 |...Person1
+
 |...Person2
+
 |...Person3
+
 |...Person4
 
 That’s all…. You have built a simple, but efficient face recognition system. Have a nice day…!!
